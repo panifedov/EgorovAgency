@@ -2,12 +2,375 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/icomoon/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Egorov Agency Test</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="wrapper">
+      <main class="main">
+        <section class="first-section">
+          <div class="first-section-body">
+            <div class="first-section-header">
+              <div class="corner-decoration-left animate">
+                <img src="/assets/images/left-corner.svg" alt="decoration" />
+              </div>
+
+              <a href="/">
+                <div class="logo animate">
+                  <img src="/assets/images/logo.svg" alt="logo" />
+                </div>
+              </a>
+
+              <div class="corner-decoration-right animate">
+                <img src="/assets/images/right-corner.svg" alt="decoration" />
+              </div>
+            </div>
+            <div class="first-section-content">
+              <div class="first-section-content-body">
+                <div class="main-title">
+                  <h1 class="animate">Under Construction</h1>
+                  <p class="animate">
+                    We're making lots of improvements and will be back soon
+                  </p>
+                </div>
+
+                <div class="timer animate">
+                  <div class="timer-conteiner">
+                    <div class="timer-item">
+                      <span id="days"></span>
+
+                      <div class="timer-item-text large">Days</div>
+                      <div class="timer-item-text small hide">DD</div>
+                    </div>
+
+                    <div class="timer-separator">:</div>
+
+                    <div class="timer-item">
+                      <span id="hours"></span>
+                      <div class="timer-item-text large">Hours</div>
+                      <div class="timer-item-text small hide">HH</div>
+                    </div>
+
+                    <div class="timer-separator">:</div>
+
+                    <div class="timer-item">
+                      <span id="minutes"></span>
+                      <div class="timer-item-text large">Minutes</div>
+                      <div class="timer-item-text small hide">MM</div>
+                    </div>
+
+                    <div class="timer-separator">:</div>
+
+                    <div class="timer-item">
+                      <span id="seconds"></span>
+                      <div class="timer-item-text large">Seconds</div>
+                      <div class="timer-item-text small hide">SS</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="event-link animate">
+                  <p>Check our event page when you wait:</p>
+                  <a
+                    href="https://egorovagency.by/#main"
+                    target="_blank"
+                    class="event-btn"
+                  >
+                    <span class="btn-text">Go to the event</span>
+                    <div class="_icon-arrow"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="first-section-footer">
+              <form class="first-section-footer-form" novalidate>
+                <input
+                  class="form-input"
+                  type="email"
+                  placeholder="Enter your Email and get notified"
+                />
+
+                <button type="submit" class="form-btn-wrapper">
+                  <div class="_icon-arrow"></div>
+                </button>
+              </form>
+
+              <div href="" class="scroll">
+                Other Events
+                <div class="_icon-arrow"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="second-section" class="second-section">
+          <h2 class="title animate">All events</h2>
+
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-title active">
+                <img
+                  src="/assets/images/title-bg-1.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">Hawaiian party</div>
+                <div class="accordion-title-number">01</div>
+              </div>
+              <div class="accordion-content active">
+                <div class="content-info">
+                  <span>01</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">Hawaiian party</h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-2.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">Мafia party</div>
+                <div class="accordion-title-number">02</div>
+              </div>
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>02</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">Мafia party</h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-3.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">Party</div>
+                <div class="accordion-title-number">03</div>
+              </div>
+
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>03</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">Party</h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-4.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">Party on the beach</div>
+                <div class="accordion-title-number">04</div>
+              </div>
+
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>04</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">Party on the beach</h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-5.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">Home Security</div>
+                <div class="accordion-title-number">05</div>
+              </div>
+
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>05</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">Home Security</h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-6.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">
+                  Network Design & Implementation
+                </div>
+                <div class="accordion-title-number">06</div>
+              </div>
+
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>06</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">
+                      Network Design & Implementation
+                    </h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-7.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">Hawaiian party</div>
+                <div class="accordion-title-number">07</div>
+              </div>
+
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>07</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">Hawaiian party</h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-title">
+                <img
+                  src="/assets/images/title-bg-1.webp"
+                  class="accordion-title-bg"
+                  alt="slide"
+                />
+                <div class="accordion-title-descripton">
+                  System Design & Engineerings
+                </div>
+                <div class="accordion-title-number">08</div>
+              </div>
+              <div class="accordion-content">
+                <div class="content-info">
+                  <span>08</span>
+                  <div class="content-info-description">
+                    <h4 class="description-title">
+                      System Design & Engineerings
+                    </h4>
+                    <p class="description-date">24.07.2023</p>
+                    <a
+                      href="https://egorovagency.by/#main"
+                      target="_blank"
+                      class="description-info-link"
+                      >More information</a
+                    >
+                  </div>
+                </div>
+                <div class="content-bg"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="popup">
+        <div class="popup-content">
+          <p class="popup-result-message">SUCCESS!</p>
+          <p class="popup-text">
+            You have successfully subscribed to the email newsletter
+          </p>
+          <span class="popup-cross close-popup-btn _icon-cross"></span>
+          <button class="popup-blue-btn close-popup-btn">Close</button>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/script.js" type="module"></script>
   </body>
 </html>
